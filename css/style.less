@@ -1,4 +1,4 @@
-// out: ../css/style.css, sourcemap: true, compress: false
+// out: ../css/style.css, sourcemap: false, compress: true
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -134,6 +134,10 @@ ul {
   font-family: 'NotoSansCJKjp-DemiLight';
   src: url("../fonts/nato/NotoSansCJKjp-DemiLight-sub.otf");
 }
+@font-face {
+  font-family: 'HomemadeApple';
+  src: url("../fonts/HomemadeApple-Regular.ttf");
+}
 body {
   font-family: 'NotoSansCJKjp', sans-serif;
   font-weight: 400;
@@ -160,11 +164,6 @@ body {
 @blue: #0755a7;
 @text-color: #333333;
 @sidemenu: 251px;
-.main-rap {
-  width: -webkit-calc(100% ~"-" @sidemenu);
-  width: calc(100% ~"-" @sidemenu);
-  float: right;
-}
 .inner-rap {
   width: 95%;
   margin: 0 auto;
@@ -172,6 +171,75 @@ body {
 @import "mixin.less"; /* ==========================================================================
    Style for pc
   ========================================================================== */
+  .happy_customaer{
+    text-align: center;
+    padding-bottom: 90px; 
+  }   
+  .eligibleTxt {
+    width: 41%;
+    float: right;
+    font-size: 23px;
+    color: #333;
+  } 
+  .applyBtn {
+    color: #fff;
+    .gradient-bg();
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 20px;
+    &:hover {
+      opacity: .7;
+      transition: 0.3s;
+    }
+  }
+  
+  .right-menu {
+      position: fixed;
+      left: 4.2%;
+      top: 5.5%;
+      z-index: 3;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          a {
+            writing-mode: tb-rl;
+            text-decoration: none;
+            color: #c3c3c3;
+            text-transform: uppercase;
+            padding: 12px 0 13px 0;
+            font-size: 15px;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+            font-family: Roboto;
+            &:first-child {
+              padding: 22px 0 5px 0;
+            }
+            &:hover {
+              transform:0.3s;
+              color: #fd2;
+            }
+          }
+        }
+      }
+  }
+  
+  .video-rap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgba(4,114,124,0.6), rgba(17,66,99,0.5));
+    z-index: 2;
+}
+  
+  
+  
 /* About
   * By:@RoktimSazib
   * 23 Aug 2019
@@ -201,9 +269,10 @@ body {
         p {
           font-size: 18px;
           color: #333;
-          font-family: 'NotoSansCJKjp';
+          font-family: 'Futura-Medium';
           font-weight: 500;
-          margin-bottom: 29px;
+          margin-bottom: 0;
+          font-style: italic;
         }
       }
     }
@@ -343,6 +412,7 @@ body {
             width: 68%;
             img {
               max-width: 100%;
+              border-radius: 50%;
             }
           }
           // carousel dot pointer
@@ -405,9 +475,9 @@ body {
   	.newspicks-inner {
       padding: 61px 0 83px;
     		h1 {
-          font-size: 20.76px;
+          font-size: 40px;
           color: #fff;
-          font-family: 'NotoSansCJKjp';
+          font-family:'Futura-Medium';
           text-align: center;
           margin-bottom: 53px;
           font-weight: 500;
@@ -422,7 +492,8 @@ body {
             font-family: 'NotoSansCJKjp';
             padding: 19px 87px;
             border-radius: 32px;
-            font-weight: 500;
+            font-weight: bold;
+            letter-spacing: 2px;
     		}
     	}
     }
