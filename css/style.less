@@ -171,10 +171,25 @@ body {
 @import "mixin.less"; /* ==========================================================================
    Style for pc
   ========================================================================== */
+  .siteLogo {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+    background: #41727775;
+    opacity: 0.75;
+  }
   .happy_customaer{
     text-align: center;
     padding-bottom: 90px; 
   }   
+  .happy {
+    display: block;
+    text-align: center;
+    margin-bottom: 70px;
+    img {
+      border-radius: 5px;
+    }
+  }
   .eligibleTxt {
     width: 41%;
     float: right;
@@ -468,7 +483,8 @@ body {
 }
 .event-section {
   position: relative;
-  top: -151px;
+  top: 0;
+  // top: -151px;
   // newspicks style
   .news-picks {
     background-color: #394351;
@@ -494,6 +510,10 @@ body {
             border-radius: 32px;
             font-weight: bold;
             letter-spacing: 2px;
+            &:hover {
+              opacity: 0.8;
+              transition: 0.3s;
+            }
     		}
     	}
     }
@@ -806,15 +826,29 @@ body {
 .footer-section {
   background-color: rgba(33, 41, 55, .80);
   min-height: 262px;
+  .textwidget {
+    p {
+      color: #fff;
+    }
+    .telNumber {
+      color: #fff;
+    }
+  }
+  .widget-title {
+    color: #fff;
+  }
   .copy-right {
     .footer {
       padding: 63px 0 38px;
       max-width: 1280px;
+      display: flex;
+      justify-content: center;
       .footer-logo {
+        // border-right: 2px solid #fff;
         width: 23.3%;
         float: left;
         margin-left: 5.8%;
-        img {
+        &>img {
           max-width: 174px;
           width: 100%;
         }
@@ -852,7 +886,7 @@ body {
           margin-top: 19px;
         }
       }
-      p {
+      &>p {
         clear: both;
         color: rgba(255, 255, 255, .40);
         font-size: 14px;
