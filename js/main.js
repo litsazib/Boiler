@@ -2,6 +2,27 @@ var isMobile = window.matchMedia("only screen and (max-width: 768px)");
 
 
 /**
+ * POPUP Script
+ *
+ */
+ 
+ $('#freeBoiler').click(function(event) {
+   $('#FreeBoilerModal').fadeIn();
+ });
+ $('#Insulation').click(function(event) {
+   $('#FloorInsulationModal').fadeIn();
+ });
+ $('#WallInsulation').click(function(event) {
+   $('#WallInsulationModal').fadeIn();
+ });
+ $('.close').click(function(event) {
+   $('.modal').fadeOut();
+ });
+ 
+ 
+ 
+ 
+/**
  * Scroll to top of page
  *
  */
@@ -217,16 +238,18 @@ $(document).ready(function() {
 
   // end recommend
 
-  $('.theme-caro').owlCarousel({        
-    loop: true,    
-    nav: true,
+  $('.review').owlCarousel({    
+    loop: true,  
+    center: true,  
+    nav: false,
+    autoplay:true,
     dots: true,
     margin: 20,    
-    navContainer: '.themes .theme-caro',
-    navText: [
-      '<img src="images/event/left-arrow@2x.png" alt="">',
-      '<img src="images/event/right-arrow@2x.png" alt="">'
-    ], 
+    // navContainer: '.review',
+    // navText: [
+    //   '<img src="images/sp/recommend/left.png" alt="left">',
+    //   '<img src="images/sp/recommend/right.png" alt="right">'
+    // ], 
     responsive: {
       0: {
         items: 1
@@ -235,8 +258,9 @@ $(document).ready(function() {
         items: 1
     },
     769 : {
-      items: 3,
-      dots: true
+      items: 1,
+      dots: true,
+      dotsContainer: '#review-customDots'
   }
     }
   });

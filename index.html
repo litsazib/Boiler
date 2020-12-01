@@ -24,6 +24,67 @@
     var getUrl = window.location;
     var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
   </script>
+  <!-- The Modal -->
+  <div id="FreeBoilerModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Free Boiler</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal_thum">
+          <img src="images/Picture1.png" alt="">
+        </div>
+        <div class="modal_txt">
+          <h2>Some text in the Modal Body</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+  <div id="FloorInsulationModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Free Floor Insulation</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal_thum">
+          <img style="width: 347px;margin-top: 20px;" src="images/Picture3.png" alt="">
+        </div>
+        <div class="modal_txt">
+          <h2>Some text in the Modal Body</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+  <div id="WallInsulationModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Free Wall Insulation</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal_thum">
+          <img src="images/Picture2.png" alt="">
+        </div>
+        <div class="modal_txt">
+          <h2>Some text in the Modal Body</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
   <!-- Side Menu -->
   <!-- <div class="sidemenu clearfix pc">
     <div class="sidemenu-rap">
@@ -161,26 +222,23 @@
           <div class="access-address clearfix">
             <div class="access-address-rap">
               <div class="address-details clearfix">
-                <div class="card">
-                  <img src="images/Picture1.png"  alt="">
+                <div id="freeBoiler" class="card">
                   <div class="caption">
                     <h1>Free Boiler</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                   </div>
+                  <img src="images/Picture1.png"  alt="">
                 </div>
-                <div class="card">
+                <div id="Insulation" class="card">
+                  <div class="caption">
+                    <h1>Free Floor Insulation</h1>
+                  </div>
                   <img src="images/Picture3.png" alt="">
-                  <div class="caption">
-                    <h1>Under Floor Insulation Image</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  </div>
                 </div>
-                <div class="card">
-                  <img src="images/Picture2.png" alt="">
+                <div id="WallInsulation" class="card">
                   <div class="caption">
-                    <h1>Cavity Wall Insulation Image</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <h1>Free Wall Insulation</h1>
                   </div>
+                  <img src="images/Picture2.png" alt="">
                 </div>
               </div>
             </div>
@@ -193,7 +251,7 @@
   <section id="theme_link" class="theme-section clearfix">
     <div class="main-rap">
       <div class="section-title clearfix">
-        <h1 class="theme-leftToRigh">WHO IS ELIGIBLE? </h1>
+        <h1 class="theme-leftToRigh">ELIGIBLE? </h1>
       </div>
       <div class="section-body clearfix">
         <div class="theme-rap">
@@ -302,10 +360,60 @@
     <div class="news-picks main-rap clearfix">
       <div class="newspicks-inner">
         <h1>Over 2000 Happy Customer </h1>
-        <h3 class="happy"><img src="images/recommend/rev.png" alt=""></h3>
+        <!-- <div class="content-slider">
+          <div class="slider">
+            <div class="mask">
+              <ul>
+                <li class="anim1">
+                  <div class="quote">Hello, this is a quote from a person.</div>
+                  <div class="source">- Person</div>
+                </li>
+                <li class="anim2">
+                  <div class="quote">Hello, this is a quote from another person.</div>
+                  <div class="source">- Another person</div>
+                </li>
+                <li class="anim3">
+                  <div class="quote">Hello, this is a quote from an animal.</div>
+                  <div class="source">- Animal</div>
+                </li>
+                <li class="anim4">
+                  <div class="quote">Hello, this is a quote from a plant.</div>
+                  <div class="source">- Plant</div>
+                </li>
+                <li class="anim5">
+                  <div class="quote">How do ya like that.</div>
+                  <div class="source">- Cassidy</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="review owl-carousel">
+          <div class="customer">
+            <blockquote class="whisper"><p>I would like to thank Baraka Heating Service Ltd for their quick service. I was really stressed as there was no heating and hot water for some weeks but they sorted everything within a few days.</p>
+            </blockquote>                                 
+            <div class="name">
+              Clarke<span></span>
+            </div>
+          </div>
+          <div class="customer">
+            <blockquote class="whisper"><p>I would like to thank Baraka Heating Service Ltd for their quick service. I was really stressed as there was no heating and hot water for some weeks but they sorted everything within a few days.</p>
+            </blockquote>                                 
+            <div class="name">
+              Clarke<span></span>
+            </div>
+          </div>
+          <div class="customer">
+            <blockquote class="whisper"><p>I would like to thank Baraka Heating Service Ltd for their quick service. I was really stressed as there was no heating and hot water for some weeks but they sorted everything within a few days.</p>
+            </blockquote>                                 
+            <div class="name">
+              Clarke<span></span>
+            </div>
+          </div>
+        </div>
+          <div id="review-customDots" class="pc owl-dots"></div>
         <div class="newspicks-btn">
-          <a
-            href="#">Do You Qualify?</a>
+          <a href="#">Do You Qualify?</a>
         </div>
       </div>
     </div>
@@ -492,6 +600,18 @@
   <script src="js/jquery.zoomslider.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <!-- <script>
+      var modalBoiler = document.getElementById("FreeBoilerModal");
+      var btnBoiler = document.getElementById("freeBoiler");
+      
+      var modalFloorInsulation = document.getElementById("FloorInsulationModal");
+      var btnInsulation = document.getElementById("Insulation");
+      
+      var modalWallInsulationModal = document.getElementById("WallInsulationModal");
+      var btnWallInsulation = document.getElementById("WallInsulation");
+      
+
+    </script> -->
 </body>
 
 </html>

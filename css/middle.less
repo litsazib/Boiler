@@ -91,7 +91,7 @@
       }
       
       .gradient-text {
-          background-color: #ffb000;
+          background-color: #85ff9a;
           
 
           
@@ -210,10 +210,12 @@
             span {
               width: 20px;
               height: 20px;
-              background: #fd2;
+              background: @mind;
+              // background: #fd2;
               display: inline-block;
               vertical-align: sub;
               margin: 0px 10px;
+              border-radius: 100%;
             }
           }
         }
@@ -242,7 +244,8 @@
           margin-right: 18px;
           margin: 0 auto;
           a {
-            background-color: #394351;
+            // background-color: #394351;
+            .gradient-bg;
             padding: 18px 10px 21px;
             border-radius: 35px;
             &:hover {
@@ -294,7 +297,7 @@
             .gradient-bg;
             border-radius: 100px;
             padding: 20px;
-            border: 2px solid #f9c97e;
+            // border: 2px solid #f9c97e;
             margin-right: 20px;
             color: #fff;
           }
@@ -350,7 +353,8 @@
               margin: 0px 20px;
               border: 2px solid #f7f7f7;
               border-radius: 10px;
-              background: linear-gradient(90deg, #f80 0, #ffb000 100%);
+              .gradient-bg;
+              // background: linear-gradient(90deg, #f80 0, #ffb000 100%);
               color: #fff;
               transform: scale(1);
               overflow: hidden;
@@ -388,15 +392,17 @@
 /*News Pic News*/ 
 .newspic-news {
   width: 83.6%;
-  background-image: url('../images/unnamed.png');
-  // background-image: url('../images/theme-bg-img@2x.png');
+  // background-image: url('../images/unnamed.png');
+  background-image: url('../images/theme-bg-img@2x.png');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 62% 100%;
   margin: 54px auto 19px;
   .news {
     border: 2px solid;
-    border-image: linear-gradient(45deg, #ff8800, #ffb000) 1;
+    // border-image: linear-gradient(45deg, #ff8800, #ffb000) 1;
+    border-image: linear-gradient(90deg, rgba(133,255,154,1) 0%, rgba(93,255,197,1) 33%);
+    
     width: 100%;
     box-shadow: 0 0 10px -5px #3f3f3f;
     -moz-box-shadow: 0 0 10px -5px #3f3f3f;
@@ -789,7 +795,8 @@
               float: none;
               margin: 0 auto;
               a {
-                background-color: #394351;
+                // background-color: #394351;
+                .gradient-bg;
                 padding: 18px 10px 21px;
                 border-radius: 35px;
                 &::hover {
@@ -841,7 +848,8 @@
             margin: 0 auto;
             padding-bottom: 19px;
             a {
-              background-color: #394351;
+              // background-color: #394351;
+              .gradient-bg;
               padding: 16px 10px 18px;
               border-radius: 35px;
             }
