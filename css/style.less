@@ -346,12 +346,6 @@ button.owl-dot.active span {
       border-radius: 5px;
     }
   }
-  .eligibleTxt {
-    width: 41%;
-    float: right;
-    font-size: 23px;
-    color: #333;
-  } 
   .applyBtn {
     color: #fff;
     .gradient-bg();
@@ -1083,6 +1077,81 @@ button.owl-dot.active span {
     }
   }
 }
+
+/* Contact Section
+* By:@RoktimSazib
+* 23 Aug 2019
+*/
+
+.content-section {
+  padding: 75px 0 60px;
+  .section-title {
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 46px;
+      color: #333333;
+      font-family: 'Futura-Medium',sans-serif;
+    }
+  }
+  .contact-frm {
+    width: 50%;
+    margin: 0 auto;
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-top: 5px;
+      font-weight: 700;
+    }
+    .inputField {
+      color: #767676;
+      background-color: #fafafa;
+      border: 1px solid #dbdbdb;
+      height: 50px;
+      padding: 4px 20px;
+      border-radius: 0;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .inputTxtArea {
+      margin-top: 5px;
+      width: 100%;
+      height: 120px;
+      padding: 15px 20px;
+      background-color: #fafafa;
+      border: 1px solid #dbdbdb;
+    }
+    .submit {
+      // position: relative;
+      // display: inline-block;
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 12px 34px;
+      color: #fff;
+      text-transform: uppercase;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #85ff9a 0, #5dffc5 33%);
+      font-size: 18px;
+      border: none;
+      &:hover {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+
+
 /* Q&A
 * By:@RoktimSazib
 * 23 Aug 2019
@@ -1253,7 +1322,7 @@ button.owl-dot.active span {
   background-color: #333;
   min-height: 262px;
   .textwidget {
-    p {
+    p,a {
       color: #fff;
     }
     .telNumber {
@@ -1347,6 +1416,53 @@ button.owl-dot.active span {
   .sp {
     display: block;
   }
+  .owl-dots {
+    margin-bottom: 40px;
+  }
+  .eligibleTxt {
+    width: 100%;
+    float: none;
+    font-size: 23px;
+    color: #333;
+    padding: 0px 5px;
+  }
+  .modal-content {
+    width: 95%;
+    .modal-body {
+      display: block;
+      .modal_thum {
+        width: 100%;
+      }
+      .modal_txt {
+        width: 100%;
+      }
+    }
+  }
+  
+  .content-section  {
+    padding-top: 0;
+  }
+  .content-section .section-title h1 {
+    font-size: 30px;
+  }
+  .contact-frm {
+    width: 77% !important;
+    margin: 0 auto;
+    .inputField {
+      width: 90% !important;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .gradient-text {
+    font-size: 30px;
+  }
   /* About SP
   * By:@RoktimSazib
   * 26 Aug 2019
@@ -1410,7 +1526,6 @@ button.owl-dot.active span {
   */
   .recommend-section {
     .recommend-wrap {
-      background-image: url('../images/sp/recommend/bg@2x.png');
       .recommend-inner {
         width: 100%;
         padding: 60px 0 46px;
@@ -1500,7 +1615,7 @@ button.owl-dot.active span {
       .newspicks-inner {
         padding: 43px 0 65px;
         h1 {
-          font-size: 14.38px;
+          font-size: 20px;
           margin-bottom: 40px;
         }
         .newspicks-btn {
@@ -1509,6 +1624,9 @@ button.owl-dot.active span {
             border-radius: 56px;
             padding: 16px 108px;
           }
+        }
+        .review {
+          width: 95%;
         }
       }
     }
@@ -1717,56 +1835,18 @@ button.owl-dot.active span {
   * By:@RoktimSazib
   * 26 Aug 2019
   */
+  
   .footer-section {
     .copy-right {
       float: none;
       .footer {
         padding: 46px 0 0;
         max-width: 100%;
-        .sp-nav-link {
-          li.first-link {
-            float: left;
-            margin-left: 4%;
-            margin-right: 7%;
-            list-style: none;
-            a {
-              color: #fff;
-              font-size: 13px;
-            }
-          }
-          ul.list-link {
-            float: left;
-            li {
-              &:nth-child(1) {
-                margin-bottom: 4px;
-              }
-              a {
-                color: #fff;
-                font-size: 13px;
-                opacity: 0.80;
-              }
-            }
-          }
-          .second {
-            margin-top: 16px;
-          }
-        }
-        .f-logo {
-          border-top: 1px solid #fff;
-          padding-top: 27px;
-          width: 92%;
-          margin: 35px auto 28px;
-          img {
-            width: 65%;
-            margin: 0 auto;
-            text-align: center;
-            display: block;
-          }
-        }
-        p {
-          padding-bottom: 35px;
-          font-size: 12px;
-          margin: 0;
+        display: block;
+        .footer-logo {
+          width: 100%;
+          float: none;
+          margin-left: 0;
         }
       }
     }

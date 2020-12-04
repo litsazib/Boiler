@@ -277,13 +277,13 @@ $(document).ready(function() {
     var st = $(this).scrollTop();
     var service = $(this).scrollTop();
     var about = $("#about").offset().top;
-    // console.log(st);
+    console.log(st);
     if (st > lastScrollTop){
       if(isMobile.matches){
-        if(st>25){
+        if(st>400){
           $('.leftToRight').addClass('anim');
         }
-        if(st>25){
+        if(st>410){
           $('.leftToRigh-sp').addClass('anim-sp');
         }
         if(st>886){
@@ -305,7 +305,9 @@ $(document).ready(function() {
           $('.qa-leftToRigh').addClass('anim');
           $('h1.qa-leftToRigh').css('overflow','unset');
         }
+        console.log('sp');
       }else {
+        console.log('pc');
         if(st>140){
           $('.leftToRight').addClass('anim');
         }
