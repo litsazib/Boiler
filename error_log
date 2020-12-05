@@ -1,0 +1,12 @@
+[04-Dec-2020 15:08:34 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:34 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8
+[04-Dec-2020 15:08:40 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:40 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: tel in /home/codingav/public_html/boiler/sendEmail.php on line 7
+[04-Dec-2020 15:08:44 UTC] PHP Notice:  Undefined index: message in /home/codingav/public_html/boiler/sendEmail.php on line 8

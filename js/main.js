@@ -277,7 +277,7 @@ $(document).ready(function() {
     var st = $(this).scrollTop();
     var service = $(this).scrollTop();
     var about = $("#about").offset().top;
-    console.log(st);
+    // console.log(st);
     if (st > lastScrollTop){
       if(isMobile.matches){
         if(st>400){
@@ -305,9 +305,7 @@ $(document).ready(function() {
           $('.qa-leftToRigh').addClass('anim');
           $('h1.qa-leftToRigh').css('overflow','unset');
         }
-        console.log('sp');
       }else {
-        console.log('pc');
         if(st>140){
           $('.leftToRight').addClass('anim');
         }

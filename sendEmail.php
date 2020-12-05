@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 if(isset($_POST['name']) && isset($_POST['email'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $subject = $_POST['tel'];
+    $subject = $_POST['subject'];
     $body = $_POST['message'];
 
     require_once "PHPMailer/PHPMailer.php";
@@ -15,10 +15,10 @@ if(isset($_POST['name']) && isset($_POST['email'])){
 
     //smtp settings
     // $mail->isSMTP();
-    // $mail->Host = "smtp.gmail.com";
+    // $mail->Host = "mail.orbititech.com";
     // $mail->SMTPAuth = true;
-    // $mail->Username = "youremail@gmail.com";
-    // $mail->Password = 'yourpassword';
+    // $mail->Username = "client@orbititech.com";
+    // $mail->Password = 'orbit123';
     // $mail->Port = 465;
     // $mail->SMTPSecure = "ssl";
 

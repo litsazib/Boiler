@@ -168,6 +168,9 @@ body {
 /* ==========================================================================
    Style for pc
   ========================================================================== */
+  h4.sent-notification {
+    color: #009688;
+  }
   // Modal Style 
   .modal {
   display: none; /* Hidden by default */
@@ -1122,22 +1125,19 @@ button.owl-dot.active span {
       border: 1px solid #dbdbdb;
     }
     .submit {
-      // position: relative;
-      // display: inline-block;
-      font-family: "Raleway", sans-serif;
-      font-size: 13px;
+      font-family: "Raleway",sans-serif;
       line-height: 24px;
       font-weight: 700;
-      padding: 12px 34px;
+      padding: 19px 80px;
       color: #fff;
       text-transform: uppercase;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       -o-border-radius: 3px;
-      border-radius: 3px;
       background: linear-gradient(90deg, #85ff9a 0, #5dffc5 33%);
       font-size: 18px;
       border: none;
+      border-radius: 32px;
       &:hover {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -1319,8 +1319,8 @@ button.owl-dot.active span {
 * 23 Aug 2019
 */
 .footer-section {
-  background-color: #333;
-  min-height: 262px;
+  // background-color: #333;
+  background: linear-gradient(-45deg, #04727c, #95c1bb);
   .textwidget {
     p,a {
       color: #fff;
@@ -1347,6 +1347,61 @@ button.owl-dot.active span {
           max-width: 174px;
           width: 100%;
         }
+        .textwidget {
+          margin-top: 30px;
+          div {
+            color: #fff;
+          }
+          .actionBtn {
+            .teleNumber {
+              width: 80%;
+              max-width: 100%;
+              font-family: Asul;
+              font-size: 1em;
+              padding: 1em 2em;
+              background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #aa0000), color-stop(1, #dd0000));
+              margin-top: 30px;
+              display: block;
+              text-align: center;
+              border-radius: 10px;
+              &:hover {
+                opacity: 0.3;
+                transition: 0.3s;
+              }
+            }
+            .emailAddress {
+              width: 80%;
+              max-width: 100%;
+              font-family: Asul;
+              font-size: 1em;
+              padding: 1em 2em;
+              background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #aa0000), color-stop(1, #dd0000));
+              margin-top: 10px;
+              display: block;
+              text-align: center;
+              border-radius: 10px;
+              &:hover {
+                opacity: 0.3;
+                transition: 0.3s;
+              }
+            }
+          }
+          .social-icon {
+              display: flex;
+              margin-top: 70px;
+              a {
+                img {
+                  width: 50%;
+                  margin: 0 auto;
+                }
+                &:hover {
+                  opacity: 0.3;
+                  transition: 0.3s;
+                }
+              }
+          }
+        }
+        
       }
       .f-link {
         width: 65%;
@@ -1391,6 +1446,25 @@ button.owl-dot.active span {
       }
       .hover {
         color: #fff !important;
+      }
+    }
+  }
+  .site-footer {
+    background-color: #1c1c1c;
+    .container {
+      p {
+        margin-bottom: 20px;
+        padding: 20px 0;
+        margin: 0;
+        color: #f7f7f7;
+        text-align: center;
+        a {
+          color: #f2f2f2;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
       }
     }
   }
@@ -1452,7 +1526,12 @@ button.owl-dot.active span {
       width: 90% !important;
     }
   }
-  
+.social-icon {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 23px;
+  text-align: center;
+}
   
   
   
