@@ -1,11 +1,15 @@
 <?php 
 use PHPMailer\PHPMailer\PHPMailer;
 
-if(isset($_POST['name']) && isset($_POST['email'])){
+if(isset($_POST['name']) && isset($_POST['email'] ) && isset($_POST['subject'] ) && isset($_POST['body'] )){
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
-    $body = $_POST['message'];
+    $body = $_POST['body'];
+    
+    //echo $name.$email.$subject.$body;
+    //echo 'asdfasdf';
 
     require_once "PHPMailer/PHPMailer.php";
     require_once "PHPMailer/SMTP.php";
@@ -40,6 +44,8 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     }
 
     exit(json_encode(array("status" => $status, "response" => $response)));
+}else {
+    echo 'no data';
 }
 
 ?>

@@ -482,11 +482,8 @@
   function sendEmail() {
       var name = $("#name");
       var email = $("#email");
-      var subject = $("#tel");  //not use
+      var subject = $("#subject"); 
       var body = $("#message");
-      // var bodyVal = body.val();
-      // var subjectVal = subject.val();
-      // var mailBody = bodyVal+"</br>Tel:"+subjectVal;
       
 
     if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
